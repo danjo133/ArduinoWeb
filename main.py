@@ -151,4 +151,4 @@ def get(sensor):
 # MAIN: start the server
 if __name__ == '__main__':
     # start_process('loop',  './loop')
-    app.run(debug=True)
+    app.run(debug=True,host='0.0.0.0')
