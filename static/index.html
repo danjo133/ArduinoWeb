@@ -1,17 +1,37 @@
 <html>
-<head>
+  <head>
     <title>Arduino</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
-<p>TEST HTML</p>
-<button id="LIGHT1" data="ON">Turn On Light</button>
-<button id="ALL" data="ON">Turn On All</button>
-<button id="TEST" data="ON">Turn On Test</button>
-<ul>
-    <li>Sensor1: 3</li>
-</ul>
-</body>
-<script src="js/jquery-1.11.3.js"></script>
-<script src="js/main.js"></script>
+  </head>
+  <body>
+    <p>Control Buttons</p>
+
+    <button class="controlswitch"
+	    data-sensor-id="LIGHT1"
+	    data-sensor-value="ON">
+      Turn On Light
+    </button>
+    <button class="controlswitch"
+	    data-sensor-id="ALL"
+	    data-sensor-value="ON">
+      Turn On All
+    </button>
+    <button class="controlswitch"
+	    data-sensor-id="TEST"
+	    data-sensor-value="ON">
+      Turn On Test
+    </button>
+
+    <p>TEST log</p>
+    <ul class="sensorlog" data-sensor-id="TEST">
+      <li>Testdata</li>
+    </ul>
+    <p>ALL log</p>
+    <ul class="sensorlog" data-sensor-id="ALL">
+      <li>Testdata</li>
+    </ul>
+
+  </body>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/main.js"></script>
 </html>
