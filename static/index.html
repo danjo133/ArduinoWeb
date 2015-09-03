@@ -7,9 +7,14 @@
     <p>Control Buttons</p>
 
     <button class="controlswitch"
-	    data-sensor-id="LIGHT1"
+	    data-sensor-id="LED1"
 	    data-sensor-value="ON">
       Turn On Light
+    </button>
+    <button class="controlswitch"
+	    data-sensor-id="LED1"
+	    data-sensor-value="OFF">
+      Turn Off Light
     </button>
     <button class="controlswitch"
 	    data-sensor-id="ALL"
@@ -30,7 +35,11 @@
     <ul class="sensorlog" data-sensor-id="ALL">
       <li>Testdata</li>
     </ul>
-
+    <p>Button log</p>
+    <ul class="sensorlog" data-sensor-id="BUTTON1">
+      <li>Testdata</li>
+    </ul>
+    
   </body>
   <script src="js/jquery-1.11.3.js"></script>
   <script src="js/main.js"></script>
