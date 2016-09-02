@@ -27,24 +27,12 @@ Now we're ready to install some software.
     $ sudo apt-get upgrade # will download up to 150MB of packages.
     $ sudo apt-get install emacs
 
-And then we need to get a modern version of python
-
-    $ wget https://www.python.org/ftp/python/3.4.3/Python-3.4.3.tar.xz
-    $ tar xvf Python-3.4.3.tar.xz
-    $ cd Python-3.4.3/
-    $ ./configure --prefix=/opt/python  # You can set a prefix here
-    $ make
-    $ sudo make install
-
 # Get the code and dependencies that you will base your project on
 
 Begin by cloning this repo:
 
     $ git clone https://github.com/danjo133/ArduinoWeb.git
 
-Install some files:
-    $ cp ArduinoWeb/.bash.personal ~/
-    $ echo "source .bash.personal" >> ~/.bashrc
 Then you can go into arduinoweb and run:
 
     $ pyvenv-3.4 env
